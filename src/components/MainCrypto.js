@@ -96,7 +96,7 @@ export default class MainCrypto extends React.Component {
             return response === 3;
         }
         // BTC call
-        axios.get('http://www.coincap.io/page/BTC').then(function (response) {
+        axios.get('https://www.coincap.io/page/BTC').then(function (response) {
             const coins = instance.state.coins;
             const coinInfo = buildCoinInfo(response.data.short, response.data.long, response.data.usdPrice, response.data.time, '');
             coins[0] = coinInfo;
@@ -105,7 +105,7 @@ export default class MainCrypto extends React.Component {
             if (allLoaded()) instance.setState({ allLoaded: true });
         });
         // ETH Call
-        axios.get('http://www.coincap.io/page/ETH').then(function (response) {
+        axios.get('https://www.coincap.io/page/ETH').then(function (response) {
             const coins = instance.state.coins;
             const coinInfo = buildCoinInfo(response.data.short, response.data.long, response.data.usdPrice, response.data.time, '');
             coins[1] = coinInfo;
@@ -114,7 +114,7 @@ export default class MainCrypto extends React.Component {
             if (allLoaded()) instance.setState({ allLoaded: true });
         });
         // XRP Call
-        axios.get('http://www.coincap.io/page/XRP').then(function (response) {
+        axios.get('https://www.coincap.io/page/XRP').then(function (response) {
             const coins = instance.state.coins;
             const coinInfo = buildCoinInfo(response.data.short, response.data.long, response.data.usdPrice, response.data.time, '');
             coins[2] = coinInfo;
