@@ -32,27 +32,6 @@ export default class MainCrypto extends React.Component {
                 lastUpdate: '',
                 diffOneDay: '',
             }],
-            BTC: {
-                name: '',
-                fullname: '',
-                usdPrice: '',
-                lastUpdate: '',
-                diffOneDay: '',
-            },
-            ETH: {
-                name: '',
-                fullname: '',
-                usdPrice: '',
-                lastUpdate: '',
-                diffOneDay: '',
-            },
-            XRP: {
-                name: '',
-                fullname: '',
-                usdPrice: '',
-                lastUpdate: '',
-                diffOneDay: '',
-            },
             allLoaded: false,
             showDetail: false,
         }
