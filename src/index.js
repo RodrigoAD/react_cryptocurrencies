@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Link
+// } from 'react-router-dom';
 
 import MainCrypto from './components/MainCrypto';
-import Coin from './components/Coin';
+// import Coin from './components/Coin';
 // import NavigationSteps from './components/NavigationSteps';
 
 
@@ -19,6 +19,6 @@ ReactDOM.render(
     //         <Route exact path="/coins/ETH" component={Coin}/>
     //     </div>
     // </Router>,
-    <MainCrypto />,
+    <MainCrypto/>,
     document.getElementById('root')
 );

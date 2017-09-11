@@ -1,12 +1,18 @@
 import React from 'react';
 
-const coinDetail = {
+const coinDetailStyle = {
     display: 'block',
     color: 'white'
 }
-
+const diffOneDayStyle = {
+    display: 'block',
+    color: 'green'
+}
 export default class Coin extends React.Component {
     render() {
+        if (this.props.diffOneDay < 0) {
+            diffOneDayStyle.color = 'red';
+        }
         return (
             <div className="container">
                 <div className="coinContainer">
@@ -18,10 +24,11 @@ export default class Coin extends React.Component {
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
                             <div className="centered">
-                                <span style={coinDetail}>{this.props.fullname}</span>
-                                <span style={coinDetail}>{this.props.usdPrice} $</span>
-                                <span style={coinDetail}>{this.props.lastUpdate}</span>
+                                <span style={coinDetailStyle}>{this.props.fullname}</span>
+                                <span style={coinDetailStyle}>{this.props.usdPrice} $</span>
+                                <span style={coinDetailStyle}>{this.props.eurPrice} €</span>
                                 <br/>
+                                <span style={diffOneDayStyle}>{this.props.diffOneDay} %</span>
                             </div>
                         </div>
                     </div>

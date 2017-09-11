@@ -6,8 +6,8 @@
 
 ## TODO
  - Build Detail
+ - Two Decimal price
  - Get graphs from 1 year, 1 month and 1 day
- - Format Dates
  - Show percentage differences from last day
  - Show price in different currencies
  - Get some coins icons
