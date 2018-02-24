@@ -49,7 +49,7 @@ export default class MainCrypto extends React.Component {
 		const instance = this;
 		const io = require('socket.io-client');
 		// Socket is over HTTP protocol, will not work with https deployment
-		const socket = io.connect('http://socket.coincap.io');
+		const socket = io.connect('https://coincap.io');
 		socket.on('trades', (data) => {
 			const coinName = data.message.coin;
 			const msg = data.message.msg;
