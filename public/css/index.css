@@ -39,16 +39,15 @@ html, body, #root {
 
 /*Flexbox Centering*/
 .aligner {
+  display: table;
+  position: absolute;
   height: 100%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
+  width: 100%;
+}
+
+.mainRow {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 body {
@@ -93,7 +92,7 @@ h6,
   margin-top: 0;
 }
 
-.container p {
+.coinContainer p {
   font-size: 250%;
   color: white;
   display: block;
