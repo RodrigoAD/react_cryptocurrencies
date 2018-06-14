@@ -10,7 +10,6 @@ import MainCrypto from './components/MainCrypto';
 // import Coin from './components/Coin';
 // import NavigationSteps from './components/NavigationSteps';
 
-
 ReactDOM.render(
     // <Router>
     //     <div>
